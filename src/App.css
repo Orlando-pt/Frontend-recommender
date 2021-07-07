@@ -2,3 +2,14 @@
   text-align: center;
 }
 
+.selected-movies {
+  max-height: 20vh;
+}
+
+.recommendations-container {
+  margin-top: 2vh;
+}
+
+.modal-text-color {
+  color: black;
+}
