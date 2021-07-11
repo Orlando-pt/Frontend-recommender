@@ -28,7 +28,7 @@ function App() {
   const handleModalShow = () => setModalState(true);
 
   useEffect(() => {
-      const apiUrl = 'http://35.198.67.129/movies'
+      const apiUrl = 'https://35.198.67.129/movies'
       fetch(apiUrl)
           .then((response) => response.json())
           .then((data) => {
@@ -64,7 +64,7 @@ function App() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ movies: Array.from(selected), ratings: ratings })
     };
-    fetch('http://35.198.67.129/recommendation', requestOptions)
+    fetch('https://35.198.67.129/recommendation', requestOptions)
       .then(response => response.json())
       .then(data => setRecommendationsState({ loadingRecommendations: false, recommendations: data }));
 
